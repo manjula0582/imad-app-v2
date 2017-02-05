@@ -22,11 +22,11 @@ app.get('/login',function(req, res){
 });
 
 app.get('/Home',function(req, res){
-    res.send('Home');
+    res.sendFile(path.join(__dirname, 'ui', 'home.html'));
 });
 
 app.get('/Product',function(req, res){
-    res.send('Product');
+    res.sendFile(path.join(__dirname, 'ui', 'product.html'));
 });
 
 
